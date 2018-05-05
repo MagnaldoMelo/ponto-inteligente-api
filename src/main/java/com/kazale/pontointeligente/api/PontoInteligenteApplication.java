@@ -1,5 +1,4 @@
-package com.kasale.pontointeligente.api;
-
+package com.kazale.pontointeligente.api;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
