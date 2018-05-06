@@ -1,0 +1,3 @@
+CREATE TABLE test_data ( 
+ valor VARCHAR ( 25 ) NOT NULL PRIMARY KEY
+ );
