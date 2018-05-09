@@ -5,7 +5,8 @@ import java.util.Optional;
 import org.hibernate.validator.constraints.Length;
 
 
-import javax.validation.constraints.*;
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
 
 public class FuncionarioDto {
 	

@@ -1,6 +1,7 @@
 package com.kazale.pontointeligente.api.security.dto;
 
-import javax.validation.constraints.*;
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
 
 public class JwtAuthenticationDto {
 	

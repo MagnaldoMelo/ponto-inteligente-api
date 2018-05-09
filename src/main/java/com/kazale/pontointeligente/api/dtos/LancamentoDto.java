@@ -2,7 +2,8 @@ package com.kazale.pontointeligente.api.dtos;
 
 import java.util.Optional;
 
-import javax.validation.constraints.*;
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
 
 public class LancamentoDto {
 	
