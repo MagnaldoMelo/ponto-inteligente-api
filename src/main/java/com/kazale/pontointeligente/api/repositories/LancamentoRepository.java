@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
         query = "SELECT lanc FROM lancamento lanc WHERE lanc.funcionario_id = :funcionarioId"
     )
 })
-public interface LancamentoReposiroty extends JpaRepository<Lancamento, Long>{
+public interface LancamentoRepository extends JpaRepository<Lancamento, Long>{
 
     List<Lancamento> findByFuncionarioId(@Param("funcionarioId") Long funcionarioId);
     Page<Lancamento> findByFuncionarioId(@Param("funcionarioId") Long funcionarioId, Pageable pageable);

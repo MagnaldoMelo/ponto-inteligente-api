@@ -23,7 +23,6 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 
 import com.kazale.pontointeligente.api.enums.PerfilEnum;
-import com.kazale.pontointeligente.api.entities.Lancamento;
 
 @Entity
 @Table(name = "funcionario")
@@ -32,18 +31,18 @@ public class Funcionario implements Serializable{
     private static final long serialVersionUID = 5653987551342767756L;
 
     private Long id;
-    private String nome;
-    private String email;
-    private String senha;
-    private String cpf;
-    private BigDecimal valorHora;
-    private float qtdHorasTrabalhoDia;
-    private float qtdHorasAlmoco;
-    private PerfilEnum perfil;
-    private Date dataCriacao;
-    private Date dataAtualizacao;
-    private Empresa empresa;
-    private List<Lancamento> lancamentos;
+	private String nome;
+	private String email;
+	private String senha;
+	private String cpf;
+	private BigDecimal valorHora;
+	private Float qtdHorasTrabalhoDia;
+	private Float qtdHorasAlmoco;
+	private PerfilEnum perfil;
+	private Date dataCriacao;
+	private Date dataAtualizacao;
+	private Empresa empresa;
+	private List<Lancamento> lancamentos;
 
     public Funcionario(){}
 
@@ -148,7 +147,7 @@ public class Funcionario implements Serializable{
     @Column(name = "qtd_horas_trabalho_dia", nullable = true)
 	public float getQtdHorasTrabalhoDia() {
 		return qtdHorasTrabalhoDia;
-    }
+	}
     
     @Transient
 	public Optional<Float> getQtdHorasTrabalhoDiaOpt() {
@@ -158,7 +157,7 @@ public class Funcionario implements Serializable{
 	/**
 	 * @param qtdHorasTrabalhoDia the qtdHorasTrabalhoDia to set
 	 */
-	public void setQtdHorasTrabalhoDia(float qtdHorasTrabalhoDia) {
+	public void setQtdHorasTrabalhoDia(Float qtdHorasTrabalhoDia) {
 		this.qtdHorasTrabalhoDia = qtdHorasTrabalhoDia;
 	}
 
@@ -178,7 +177,7 @@ public class Funcionario implements Serializable{
 	/**
 	 * @param qtdHorasAlmoco the qtdHorasAlmoco to set
 	 */
-	public void setQtdHorasAlmoco(float qtdHorasAlmoco) {
+	public void setQtdHorasAlmoco(Float qtdHorasAlmoco) {
 		this.qtdHorasAlmoco = qtdHorasAlmoco;
 	}
 
